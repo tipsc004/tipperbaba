@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1008336695529380');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1008336695529380&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>𝐓𝐈𝐏𝐏𝐄𝐑 (𝐁𝐀𝐁𝐀)™
+</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        :root {
+            --primary: #6d320e;
+            --secondary: #0a3a49;
+            --accent: #9a2910;
+            --bg: #020617;
+            --text: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(1200px 600px at top, var(--secondary), var(--bg));
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .bg-blur {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .bg-blur span {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            filter: blur(120px);
+            opacity: .35;
+            animation: float 12s infinite alternate ease-in-out;
+        }
+
+        .bg-blur span:nth-child(1) {
+            top: 10%;
+            left: 5%;
+        }
+
+        .bg-blur span:nth-child(2) {
+            bottom: 15%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0)
+            }
+
+            to {
+                transform: translateY(-60px)
+            }
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            max-width: 520px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 28px;
+            padding: 36px 28px 32px;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+            animation: cardIn .9s ease-out;
+        }
+
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(.96)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, .15);
+            color: #86efac;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* Center circular image on top */
+        .card .heading-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: block;
+            object-fit: cover;
+            animation: imgFade 1s ease-out;
+        }
+
+        @keyframes imgFade {
+            from {
+                opacity: 0;
+                transform: translateY(-20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .sub {
+            font-size: 15px;
+            opacity: .85;
+            margin-bottom: 26px;
+            /* font-style:italic; */
+            background-color: yellow;
+            border-radius:4px;
+            border:1px solid black;
+            padding:4px 0px ;
+            color:black;
+            padding:0px 2px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .timer {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .timer span {
+            font-weight: 700;
+            color: #86efac;
+            font-size: 18px;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+        }
+
+        a.button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 26px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #ffffff;
+            font-weight: 800;
+            text-decoration: none;
+            border: 2px solid white;
+            box-shadow: 0 20px 40px rgba(34, 197, 94, .45);
+            transform: translateZ(0);
+            transition: .3s ease;
+        }
+
+        a.button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 28px 60px rgba(101, 13, 13, 0.65);
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 13px;
+            opacity: .75;
+        }
+
+        .disclaimer {
+            margin-top: 22px;
+            padding-top: 16px;
+            border-top: 1px dashed rgba(255, 255, 255, .25);
+            font-size: 12px;
+            line-height: 1.6;
+            opacity: .75;
+        }
+
+        @media(max-width:480px) {
+            h1 {
+                font-size: 22px
+            }
+
+            .card {
+                padding: 30px 20px
+            }
+
+            .card .heading-img {
+                width: 100px;
+                height: 100px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="bg-blur">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="card">
+             <!-- Center circular image on top of heading -->
+            <img src="logo.jpg" alt="cricket Illustration" class="heading-img" style="border: 2px solid rgb(255, 221, 0);">
+            <h1>𝐓𝐈𝐏𝐏𝐄𝐑 (𝐁𝐀𝐁𝐀)™
+</h1>
+            <p class="sub">Accurate analysis • Match Update • Right Pred!ction</p>
+            <div class="timer">FREE JOINING ENDS IN <span id="countdown">30</span>s</div>
+            <div class="cta">
+                <a href="https://telegram.me/+WF6Zqb6cqiBhZGI1" target="_blank"  class="button"  >JOIN TELEGRAM FOR NEW UPDATE <i
+                        class="fa fa-telegram"></i></a>
+            </div>
+  
+           
+            <div class="disclaimer">Disclaimer: This channel shares cricket updates, analysis, and general information
+                for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify
+                independently and act responsibly.</div>
+
+                   <!--  my link -->    <a href="https://t.me/+OqzG0AZ_MTtmOGE1" class="" style="  text-decoration: none;  padding:4px 2px; display:flex; place-items:center; place-content:center; " > <div class=""  style="padding:4px 2px; display:flex; place-items:center; place-content:center; " ><p class="" style="color:white;  text-decoration: none; margin-right:4px; " >Ads by</p><b class="text-blue-300">Saurabh9xz</b></div></a>
+  
+        </div>
+        
+    </div>
+     <script>
+        let remainingSeconds = 35;
+        const el = document.getElementById('countdown');
+        function tick() { el.textContent = remainingSeconds; remainingSeconds--; if (remainingSeconds < 0) remainingSeconds = 20; }
+        tick();
+        setInterval(tick, 1000);
+    </script>
+
+
+
+
+
+</body>
+
+</html>
+
+
